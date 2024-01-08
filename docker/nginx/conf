@@ -5,9 +5,9 @@ server {
     server_name sportdistrict.ru www.sportdistrict.ru;
     server_tokens off;
 
-    location /.well-known/acme-challenge/ {
-        root /var/www/certbot;
-    }
+;     location /.well-known/acme-challenge/ {
+;         root /var/www/certbot;
+;     }
 
     location / {
         return 301 https://sportdistrict.ru$request_uri;
