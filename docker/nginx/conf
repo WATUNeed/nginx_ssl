@@ -1,4 +1,5 @@
-server {
+http {
+    server {
     listen 80;
 ;     listen [::]:80;
 
@@ -14,6 +15,8 @@ server {
 ;         return 301 https://sportdistrict.ru$request_uri;
     }
 }
+}
+
 
 ; server {
 ;     listen 443 default_server ssl http2;
