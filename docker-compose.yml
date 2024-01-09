@@ -20,7 +20,8 @@ services:
       - ./docker/nginx/:/etc/nginx/conf.d/:ro
       - ./certbot/www:/var/www/certbot/:ro
       - ./certbot/conf/:/etc/nginx/ssl/:ro
-#    restart: always
+    depends_on:
+      - backend
 
   certbot:
     image: certbot/certbot:latest
